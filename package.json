@@ -1,0 +1,27 @@
+{
+    "name": "duan2",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "nodemon --inspect src/index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vodinhht20/Du-An-2.git"
+    },
+    "author": "vodinh",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/vodinhht20/Du-An-2/issues"
+    },
+    "homepage": "https://github.com/vodinhht20/Du-An-2#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "express-handlebars": "^5.3.3"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.12"
+    }
+}
