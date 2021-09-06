@@ -370,6 +370,7 @@
                         & form {
                             position: relative;
                             width: min-content;
+                            display: flex;
                             & input {
                                 width: 300px;
                                 height: 35px;
@@ -680,11 +681,28 @@
         
         .box-product-show {
             & .title-product-show {
+                position: relative;
                 border-radius: 20px;
                 background-repeat: no-repeat;
                 background-size: cover;
                 object-fit: cover;
+                box-shadow: 0px 2px 8px #5653538c;
                 padding: 20px;
+                transition: all 0.5s;
+                & .list-category {
+                    position: relative;
+                }
+                & .bnt-more {
+                    position: absolute;
+                    font-size: 30px;
+                    top: 15px;
+                    right: 15px;
+                    display: none;
+                    cursor: pointer;
+                }
+                & .active {
+                    display: block !important;
+                }
                 & a {
                     text-decoration: none;
                 }
@@ -692,6 +710,7 @@
                     color: #444;
                     font-size: 22px;
                     font-weight: 700;
+                    margin: 0;
                 }
                 & ul {
                     padding-left: 40px;
@@ -727,7 +746,6 @@
                         z-index: 3;
                         padding: 10px 10px 0 10px;
                         border-radius: 20px 0;
-                        min-width: 230px;
                         border-left: 1px solid rgb(189, 189, 189);
                         & a {
                             text-decoration: none;
@@ -748,9 +766,10 @@
                                 left: 0;
                                 right: 0;
                                 z-index: 2;
-                                transform: translateY(70px);
+                                transform: translateY(60px);
                                 transition: all 0.5s;
                                 text-align: center;
+                                bottom: 0;
                                 & i {
                                     color: #fff;
                                     font-size: 25px;
@@ -846,9 +865,11 @@
             background-image: url(../image/bg_delivery_express2.jpg);
             flex-direction: column;
             justify-content: center;
+            padding: 20px;
             & h2 {
                 color: #fff;
                 font-size: 25px;
+                text-shadow: 2px 2px 2px #444;
             }
             & a {
                 padding: 5px 15px;
@@ -899,15 +920,28 @@
             .header-rights form {
                 display: none;
             }
+            .box-product-show .title-product-show .bnt-buy-now {
+                font-size: 13px;
+            }
         }
         
-        @media (max-width: 992px) {
+        @media (max-width: 991px) {
             .box-navbar-left .form-search-left {
                 display: none !important;
                 margin-left: 20px;
             }
             .box-footer .decor-oranger {
                 display: none !important;
+            }
+            .box-product-show .col-lg-9.sm-md-12 {
+                order: 1;
+                margin-top: 30px;
+            }
+            .box-product-show .title-product-show .bnt-more {
+                display: block;
+            }
+            .box-product-show .title-product-show .list-category {
+                display: none;
             }
         }
         
@@ -932,6 +966,15 @@
                 & .row {
                     grid-row-gap: 20px;
                 }
+            }
+            .box-product-show .product-show-main .silde-product .product-item .product-image {
+                height: 180px;
+            }
+            .box-product-show .product-show-main .silde-product .product-item:hover img {
+                transform: scale(1.2);
+            }
+            .banner-ads-express h2 {
+                font-size: 18px;
             }
         }
         

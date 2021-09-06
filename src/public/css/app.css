@@ -291,7 +291,8 @@ footer {
         justify-content: center; }
         footer .box-footer .mailchimp-footer .sent-mail form {
           position: relative;
-          width: min-content; }
+          width: min-content;
+          display: flex; }
           footer .box-footer .mailchimp-footer .sent-mail form input {
             width: 300px;
             height: 35px;
@@ -534,17 +535,32 @@ footer::before {
   width: 100%; }
 
 .box-product-show .title-product-show {
+  position: relative;
   border-radius: 20px;
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
-  padding: 20px; }
+  box-shadow: 0px 2px 8px #5653538c;
+  padding: 20px;
+  transition: all 0.5s; }
+  .box-product-show .title-product-show .list-category {
+    position: relative; }
+  .box-product-show .title-product-show .bnt-more {
+    position: absolute;
+    font-size: 30px;
+    top: 15px;
+    right: 15px;
+    display: none;
+    cursor: pointer; }
+  .box-product-show .title-product-show .active {
+    display: block !important; }
   .box-product-show .title-product-show a {
     text-decoration: none; }
   .box-product-show .title-product-show h2 {
     color: #444;
     font-size: 22px;
-    font-weight: 700; }
+    font-weight: 700;
+    margin: 0; }
   .box-product-show .title-product-show ul {
     padding-left: 40px; }
     .box-product-show .title-product-show ul li {
@@ -570,7 +586,6 @@ footer::before {
   z-index: 3;
   padding: 10px 10px 0 10px;
   border-radius: 20px 0;
-  min-width: 230px;
   border-left: 1px solid #bdbdbd; }
   .box-product-show .product-show-main .silde-product .product-item a {
     text-decoration: none; }
@@ -588,9 +603,10 @@ footer::before {
       left: 0;
       right: 0;
       z-index: 2;
-      transform: translateY(70px);
+      transform: translateY(60px);
       transition: all 0.5s;
-      text-align: center; }
+      text-align: center;
+      bottom: 0; }
       .box-product-show .product-show-main .silde-product .product-item .product-image .icon-on-image-product i {
         color: #fff;
         font-size: 25px;
@@ -664,10 +680,12 @@ footer::before {
   position: relative;
   background-image: url(../image/bg_delivery_express2.jpg);
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  padding: 20px; }
   .banner-ads-express h2 {
     color: #fff;
-    font-size: 25px; }
+    font-size: 25px;
+    text-shadow: 2px 2px 2px #444; }
   .banner-ads-express a {
     padding: 5px 15px;
     display: inline-block;
@@ -703,14 +721,23 @@ footer::before {
     display: block !important;
     margin-left: 20px; }
   .header-rights form {
-    display: none; } }
+    display: none; }
+  .box-product-show .title-product-show .bnt-buy-now {
+    font-size: 13px; } }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .box-navbar-left .form-search-left {
     display: none !important;
     margin-left: 20px; }
   .box-footer .decor-oranger {
-    display: none !important; } }
+    display: none !important; }
+  .box-product-show .col-lg-9.sm-md-12 {
+    order: 1;
+    margin-top: 30px; }
+  .box-product-show .title-product-show .bnt-more {
+    display: block; }
+  .box-product-show .title-product-show .list-category {
+    display: none; } }
 
 @media (max-width: 765px) {
   .header-rights {
@@ -725,7 +752,13 @@ footer::before {
   .box-product-hot .title-product-hot img {
     top: -27px; }
   .box-banner-sub .row {
-    grid-row-gap: 20px; } }
+    grid-row-gap: 20px; }
+  .box-product-show .product-show-main .silde-product .product-item .product-image {
+    height: 180px; }
+  .box-product-show .product-show-main .silde-product .product-item:hover img {
+    transform: scale(1.2); }
+  .banner-ads-express h2 {
+    font-size: 18px; } }
 
 @media (max-width: 414px) {
   .box-product-hot .silde-product .product-item:hover .icon-on-image-product {
