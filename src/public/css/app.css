@@ -277,8 +277,7 @@ footer {
   background-color: #3ba66b;
   position: relative;
   color: #fff;
-  text-align: center;
-  margin-top: 300px; }
+  text-align: center; }
   footer .box-footer {
     padding: 20px; }
     footer .box-footer .mailchimp-footer {
@@ -533,6 +532,154 @@ footer::before {
 .box-banner-sub .banner-sub img {
   border-radius: 20px;
   width: 100%; }
+
+.box-product-show .title-product-show {
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  padding: 20px; }
+  .box-product-show .title-product-show a {
+    text-decoration: none; }
+  .box-product-show .title-product-show h2 {
+    color: #444;
+    font-size: 22px;
+    font-weight: 700; }
+  .box-product-show .title-product-show ul {
+    padding-left: 40px; }
+    .box-product-show .title-product-show ul li {
+      padding: 5px 0; }
+      .box-product-show .title-product-show ul li a {
+        color: #444; }
+    .box-product-show .title-product-show ul li:hover a {
+      color: #ffb416; }
+    .box-product-show .title-product-show ul li::marker {
+      color: #3ba66b; }
+  .box-product-show .title-product-show .bnt-buy-now {
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: red;
+    transition: 0.4s; }
+  .box-product-show .title-product-show .bnt-buy-now:hover {
+    background-color: #2478e6; }
+
+.box-product-show .product-show-main .silde-product .product-item {
+  position: relative;
+  z-index: 3;
+  padding: 10px 10px 0 10px;
+  border-radius: 20px 0;
+  min-width: 230px;
+  border-left: 1px solid #bdbdbd; }
+  .box-product-show .product-show-main .silde-product .product-item a {
+    text-decoration: none; }
+  .box-product-show .product-show-main .silde-product .product-item .product-image {
+    position: relative;
+    height: 220px; }
+    .box-product-show .product-show-main .silde-product .product-item .product-image img {
+      width: 90%;
+      margin: auto;
+      transition: all 0.5s; }
+    .box-product-show .product-show-main .silde-product .product-item .product-image a {
+      position: relative; }
+    .box-product-show .product-show-main .silde-product .product-item .product-image .icon-on-image-product {
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      transform: translateY(70px);
+      transition: all 0.5s;
+      text-align: center; }
+      .box-product-show .product-show-main .silde-product .product-item .product-image .icon-on-image-product i {
+        color: #fff;
+        font-size: 25px;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 50%;
+        font-weight: 100;
+        transition: all 0.3s; }
+      .box-product-show .product-show-main .silde-product .product-item .product-image .icon-on-image-product i:hover {
+        background-color: #ffb416 !important; }
+      .box-product-show .product-show-main .silde-product .product-item .product-image .icon-on-image-product .link-cart-full {
+        margin: 0 5px; }
+      .box-product-show .product-show-main .silde-product .product-item .product-image .icon-on-image-product .ti-heart {
+        background-color: #ea533b;
+        margin: 0 5px;
+        cursor: pointer; }
+      .box-product-show .product-show-main .silde-product .product-item .product-image .icon-on-image-product .ti-shopping-cart-full {
+        background-color: #3ba66b; }
+  .box-product-show .product-show-main .silde-product .product-item .product-information {
+    position: relative;
+    z-index: 3;
+    background-color: #fff;
+    padding: 10px 0;
+    height: 100%; }
+    .box-product-show .product-show-main .silde-product .product-item .product-information a p {
+      text-align: center;
+      color: #444;
+      font-size: 17px; }
+    .box-product-show .product-show-main .silde-product .product-item .product-information a p:hover {
+      color: #ffb416; }
+    .box-product-show .product-show-main .silde-product .product-item .product-information a .box-price {
+      text-align: center; }
+      .box-product-show .product-show-main .silde-product .product-item .product-information a .box-price span {
+        padding: 5px; }
+      .box-product-show .product-show-main .silde-product .product-item .product-information a .box-price .price-primary {
+        color: #df0909;
+        font-size: 17px;
+        font-weight: 700; }
+      .box-product-show .product-show-main .silde-product .product-item .product-information a .box-price .price-sub {
+        color: #919191;
+        text-decoration: line-through;
+        font-size: 14px; }
+  .box-product-show .product-show-main .silde-product .product-item .product-sale {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 5px 10px;
+    background-color: #ff5e00;
+    color: #fff;
+    border-radius: 20px 0; }
+
+.box-product-show .product-show-main .silde-product .product-item:hover img {
+  transform: scale(1.1); }
+
+.box-product-show .product-show-main .silde-product .product-item:hover .icon-on-image-product {
+  transform: translateY(-70px); }
+
+.box-product-show .product-show-main .silde-product .owl-nav,
+.box-product-show .product-show-main .silde-product .owl-dots {
+  display: none; }
+
+.banner-ads-express {
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: 200px;
+  border-radius: 20px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  background-image: url(../image/bg_delivery_express2.jpg);
+  flex-direction: column;
+  justify-content: center; }
+  .banner-ads-express h2 {
+    color: #fff;
+    font-size: 25px; }
+  .banner-ads-express a {
+    padding: 5px 15px;
+    display: inline-block;
+    background-color: #fff;
+    color: #444;
+    text-decoration: none !important;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: 0.3s; }
+  .banner-ads-express a:hover {
+    background-color: #3ba66b;
+    color: #fff; }
 
 @keyframes hidden {
   to {
