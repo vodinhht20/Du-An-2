@@ -767,3 +767,192 @@ footer::before {
 @media (max-width: 375px) {
   .box-product-hot .silde-product .product-item:hover .icon-on-image-product {
     transform: translateY(-100px); } }
+
+.box-title-admin {
+  background-image: url(../../image/bg-breadcrumb.jpg);
+  height: 200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .box-title-admin h1 {
+    font-weight: 700;
+    font-size: 25px; }
+  .box-title-admin a {
+    text-decoration: none !important;
+    color: #444; }
+  .box-title-admin span {
+    font-weight: 700; }
+
+.admin-create-product-page .title-admin-sub {
+  border-bottom: 1px solid #c2c2c2; }
+
+.admin-create-product-page .box-form-create {
+  width: 80%;
+  border-radius: 20px;
+  border: 1px solid #c2c2c2;
+  padding: 20px;
+  margin: auto;
+  background-image: linear-gradient(#b4daa6, #3ba66b); }
+  .admin-create-product-page .box-form-create .bnt-submit-create-product {
+    display: block;
+    margin: 20px auto; }
+
+.search-page .result-search {
+  padding: 10px;
+  border-bottom: 1px solid gainsboro; }
+
+.search-page .product-show-main {
+  grid-row-gap: 30px;
+  justify-content: center; }
+  .search-page .product-show-main .product-item {
+    width: 250px;
+    position: relative;
+    z-index: 3;
+    padding: 10px 10px 0 10px;
+    border-radius: 20px 0;
+    border-left: 1px solid #bdbdbd; }
+    .search-page .product-show-main .product-item a {
+      text-decoration: none; }
+    .search-page .product-show-main .product-item .product-image {
+      position: relative;
+      height: 220px; }
+      .search-page .product-show-main .product-item .product-image img {
+        width: 90%;
+        margin: auto;
+        transition: all 0.5s; }
+      .search-page .product-show-main .product-item .product-image a {
+        position: relative; }
+      .search-page .product-show-main .product-item .product-image .icon-on-image-product {
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        transform: translateY(60px);
+        transition: all 0.5s;
+        text-align: center;
+        bottom: 0; }
+        .search-page .product-show-main .product-item .product-image .icon-on-image-product i {
+          color: #fff;
+          font-size: 25px;
+          display: inline-block;
+          padding: 10px;
+          border-radius: 50%;
+          font-weight: 100;
+          transition: all 0.3s; }
+        .search-page .product-show-main .product-item .product-image .icon-on-image-product i:hover {
+          background-color: #ffb416 !important; }
+        .search-page .product-show-main .product-item .product-image .icon-on-image-product .link-cart-full {
+          margin: 0 5px; }
+        .search-page .product-show-main .product-item .product-image .icon-on-image-product .ti-heart {
+          background-color: #ea533b;
+          margin: 0 5px;
+          cursor: pointer; }
+        .search-page .product-show-main .product-item .product-image .icon-on-image-product .ti-shopping-cart-full {
+          background-color: #3ba66b; }
+    .search-page .product-show-main .product-item .product-information {
+      position: relative;
+      z-index: 3;
+      background-color: #fff;
+      padding: 10px 0; }
+      .search-page .product-show-main .product-item .product-information a p {
+        text-align: center;
+        color: #444;
+        font-size: 17px; }
+      .search-page .product-show-main .product-item .product-information a p:hover {
+        color: #ffb416; }
+      .search-page .product-show-main .product-item .product-information a .box-price {
+        text-align: center; }
+        .search-page .product-show-main .product-item .product-information a .box-price span {
+          padding: 5px; }
+        .search-page .product-show-main .product-item .product-information a .box-price .price-primary {
+          color: #df0909;
+          font-size: 17px;
+          font-weight: 700; }
+        .search-page .product-show-main .product-item .product-information a .box-price .price-sub {
+          color: #919191;
+          text-decoration: line-through;
+          font-size: 14px; }
+    .search-page .product-show-main .product-item .product-sale {
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: 5px 10px;
+      background-color: #ff5e00;
+      color: #fff;
+      border-radius: 20px 0; }
+  .search-page .product-show-main .product-item:hover img {
+    transform: scale(1.1); }
+  .search-page .product-show-main .product-item:hover .icon-on-image-product {
+    transform: translateY(-70px); }
+  .search-page .product-show-main .owl-nav,
+  .search-page .product-show-main .owl-dots {
+    display: none; }
+
+.account-page {
+  margin: 50px 0; }
+  .account-page .account-main {
+    max-width: 500px;
+    margin: auto; }
+    .account-page .account-main .tab-account ul {
+      display: flex;
+      align-items: center;
+      height: 30px;
+      flex-direction: row;
+      text-align: center; }
+      .account-page .account-main .tab-account ul li {
+        width: 50%;
+        list-style-type: none;
+        height: 100%;
+        cursor: pointer;
+        transition: 0.3s;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.021); }
+        .account-page .account-main .tab-account ul li a {
+          transition: 0.3s;
+          color: #a09e9e;
+          text-decoration: none; }
+      .account-page .account-main .tab-account ul li:hover {
+        border-bottom: 1px solid #3ba66b; }
+      .account-page .account-main .tab-account ul li:hover a {
+        color: #444; }
+      .account-page .account-main .tab-account ul .active {
+        border-bottom: 1px solid #3ba66b; }
+        .account-page .account-main .tab-account ul .active a {
+          color: #444;
+          font-weight: 600; }
+    .account-page .account-main .form-login .error-messenger {
+      display: block;
+      color: #c90909;
+      font-size: 13px;
+      padding: 3px 10px; }
+    .account-page .account-main .form-login .form-group input:focus {
+      border: 1px solid #9cdab8;
+      box-shadow: 0px 0px 7px #9cdab8; }
+    .account-page .account-main .form-login .btn-dark {
+      width: 100%;
+      display: block; }
+    .account-page .account-main .line-break {
+      border-bottom: 1px solid #ced4da;
+      position: relative; }
+      .account-page .account-main .line-break span {
+        position: absolute;
+        bottom: -10px;
+        transform: translateX(-50%);
+        left: 50%;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 0px 10px;
+        font-size: 13px;
+        border: 1px solid #ced4da;
+        color: #756e6e; }
+    .account-page .account-main .login-social-network {
+      display: flex;
+      justify-content: space-evenly; }
+      .account-page .account-main .login-social-network a {
+        transition: 0.3s; }
+        .account-page .account-main .login-social-network a img {
+          width: 150px;
+          border-radius: 10px; }
+      .account-page .account-main .login-social-network a:hover {
+        opacity: 0.9; }
