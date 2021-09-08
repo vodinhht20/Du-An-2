@@ -3,8 +3,8 @@
         <div class="account-main">
             <div class="tab-account">
                 <ul>
-                    <li class="active"><a href="">Đăng nhập</a></li>
-                    <li><a href="">Đăng ký</a></li>
+                    <li class="active"><a href="/account/login">Đăng nhập</a></li>
+                    <li><a href="/account/signin">Đăng ký</a></li>
                 </ul>
             </div>
             <div class="form-login">
@@ -40,7 +40,7 @@
 <script>
     const txtInput = document.querySelectorAll('.form-group input');
     txtInput.forEach(function (item,index) {
-        item.onchange = function () {
+        item.oninput = function () {
             if(item.value.trim() == '') {
                 item.style.border = '1px solid red';
                 if(item.parentNode.children[2]) {

@@ -314,7 +314,7 @@
                     border-top: 1px solid rgb(189, 189, 189);
                 }
                 & a {
-                    color: $bg-color;
+                    color: #444;
                     font-weight: 600;
                 }
                 & li:hover {
@@ -1201,6 +1201,9 @@
                         input:focus {
                             border: 1px solid #9cdab8;
                             box-shadow: 0px 0px 7px #9cdab8;
+                        }
+                        .required {
+                            color: rgb(201, 12, 12);
                         }
                     }
                     .btn-dark {
