@@ -17,4 +17,6 @@ app.set('views', path.join(__dirname, 'resource/views'));
 
 
 route(app);
-app.listen(port);
+app.listen(process.env.PORT, function() {
+
+});
